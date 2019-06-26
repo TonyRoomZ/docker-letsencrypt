@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM lsiobase/nginx:3.9
 
 # set version label
 ARG BUILD_DATE
@@ -18,6 +18,25 @@ RUN \
 	fail2ban \
 	gnupg \
 	memcached \
+	nginx \
+	nginx-mod-http-echo \
+	nginx-mod-http-fancyindex \
+	nginx-mod-http-geoip \
+	nginx-mod-http-headers-more \
+	nginx-mod-http-image-filter \
+	nginx-mod-http-lua \
+	nginx-mod-http-lua-upstream \
+	nginx-mod-http-nchan \
+	nginx-mod-http-perl \
+	nginx-mod-http-redis2 \
+	nginx-mod-http-set-misc \
+	nginx-mod-http-upload-progress \
+	nginx-mod-http-xslt-filter \
+	nginx-mod-mail \
+	nginx-mod-rtmp \
+	nginx-mod-stream \
+	nginx-mod-stream-geoip \
+	nginx-vim \
 	php7-bz2 \
 	php7-ctype \
 	php7-curl \
